@@ -1,0 +1,190 @@
+.container {
+    margin-top: 130px;
+    width: 1216px;
+    height: 505px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    padding-block: 40px;
+    display: flex;
+}
+
+.questions_wrapper {
+    background-color: #FFFCF2;
+    border-radius: 16px;
+    padding: 24px 25px 24px;
+}
+
+.questions_container{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.questions_title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.questions_list_wrapper{
+    box-sizing: border-box;
+    width: 502px;
+    padding: 24px;
+}
+
+.questions_list{
+    list-style: none;
+    width: auto;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(106, 99, 118, 0.1);
+    padding: 24px;
+}
+
+.questions_item{
+    display: flex;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+li:first-child .questions_item,
+li:nth-child(2) .questions_item{
+    border-bottom: 0.5px solid #D1D1D1;
+}
+
+.question_title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 9px;
+}
+
+.question_title::before{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-radius: 100%;
+    background-color: #6A0BFF;
+}
+
+.info_container{
+    display: flex;
+    gap: 24px;
+}
+
+.info{
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    background-color: #F8F8F8;
+    border-radius: 4px;
+    padding: 4px 6px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.count {
+    height: 14px;
+    border-radius: 4px;
+    background-color: #6A0BFF;
+    padding-inline: 5px;
+    color: #FFFFFF;   
+}
+
+.convenient_simulator{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.simulator_title{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.convenient_simulator h3 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 115%;
+}
+
+.convenient_simulator p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+ 
+.simulator_advantages{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.advantages_list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.advantages_list:first-child{
+    border-right: 1px solid #BABABA;
+}
+
+.advantages_item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.advantages_icon{
+    width: 43px;
+    height: 45px;
+    background-color: #FFDA85;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    display: block;
+    width: 240px;
+    height: 48px;
+    background-color: #6A0BFF;
+    border-radius: 12px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    text-decoration: none;
+    display: block;
+    width: 240px;
+    height: 48px;
+    border-radius: 12px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #690bff9e;
+}
+
+.btnActive {
+    background-color: #690bff9e;
+    text-decoration: none;
+}

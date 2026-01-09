@@ -1,0 +1,44 @@
+.level {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    border: 1px solid #BABABA;
+    border-radius: 12px;
+    width: max-content;
+
+    @media (max-width: 767px) {
+        padding: 8px 10px;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 360px) {
+        padding: 6px 8px;
+        gap: 8px;
+        font-size: 12px;
+    }
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        img {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}

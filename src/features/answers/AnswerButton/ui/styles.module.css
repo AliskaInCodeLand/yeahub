@@ -1,0 +1,110 @@
+.estimation{
+    border: none;
+    outline: none;
+    color: #474747;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        padding: 8px 10px;
+        gap: 6px;
+    }
+
+    @media (max-width: 360px) {
+        font-size: 13px;
+        padding: 6px 8px;
+        gap: 4px;
+    }
+}
+
+.dislike::before{
+    content: url(../../../public/Images/like.svg);
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media (max-width: 360px) {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.estimation:first-child:hover,
+.estimation:last-child:hover {
+    background-color: #F8F8F8;
+    color: #6C34FF;
+}
+
+.dislike:hover::before {
+    content: url(../../../public/Images/likePurple.svg);
+    display: block;
+    width: 24px;
+    height: 24px;
+    transform: scaleY(-1);
+
+    @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media (max-width: 360px) {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.like::before {
+    content: url(../../../public/Images/like.svg);
+    width: 24px;
+    height: 24px;
+    display: block;
+    transform: rotate(180deg);
+
+    @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media (max-width: 360px) {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.like:hover::before {
+    content: url(../../../public/Images/likePurple.svg);
+    display: block;
+    width: 24px;
+    height: 24px;
+    transform: scaleX(-1);
+
+    @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media (max-width: 360px) {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* .selected {
+    background-color: #6C34FF;
+    color: white;
+    border-color: #6C34FF;
+} */

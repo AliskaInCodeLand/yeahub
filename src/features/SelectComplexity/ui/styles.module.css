@@ -1,0 +1,50 @@
+.levels {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @media (max-width: 767px) {
+        gap: 6px;
+    }
+
+    @media (max-width: 360px) {
+        gap: 4px;
+    }
+}
+
+.levels_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @media (max-width: 767px) {
+        gap: 6px;
+    }
+
+    @media (max-width: 360px) {
+        gap: 4px;
+    }
+}
+
+.level {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    border: 1px solid #BABABA;
+    border-radius: 12px;
+    width: max-content;
+
+    @media (max-width: 767px) {
+        padding: 8px 10px;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 360px) {
+        padding: 6px 8px;
+        gap: 8px;
+        font-size: 12px;
+    }
+}
