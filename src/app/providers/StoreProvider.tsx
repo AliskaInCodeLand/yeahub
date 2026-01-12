@@ -1,8 +1,7 @@
 import { Provider } from "react-redux";
-import type { RouterProviderProps } from "react-router-dom";
-import { store } from "../store";
+import { store } from "../appStore";
 
-const StoreProvider = ({ children }: RouterProviderProps) => {
+const StoreProvider = ({ children }: { children: React.ReactNode }) => {
   return <Provider store={store}>{children}</Provider>;
 };
 

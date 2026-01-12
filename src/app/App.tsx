@@ -1,4 +1,4 @@
-import RouterProvider from "./providers/routerProvider";
+import RouterProvider from "./providers/RouterProvider";
 import StoreProvider from "./providers/StoreProvider";
 
 function App() {
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
