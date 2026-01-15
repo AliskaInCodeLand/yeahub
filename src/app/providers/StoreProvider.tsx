@@ -1,7 +1,12 @@
+import type { ReactNode } from "react";
 import { Provider } from "react-redux";
-import { store } from "../appStore";
+import { store } from "../store";
 
-const StoreProvider = ({ children }: { children: React.ReactNode }) => {
+type RouterProviderProps = {
+  children: ReactNode;
+};
+
+const StoreProvider = ({ children }: RouterProviderProps) => {
   return <Provider store={store}>{children}</Provider>;
 };
 

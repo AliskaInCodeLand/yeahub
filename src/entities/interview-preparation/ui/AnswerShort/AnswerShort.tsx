@@ -1,0 +1,32 @@
+import type { currentItemProp } from "../../../../entities/quiz/model/types";
+import Skeleton from "../../../../shared/ui/Sceleton/Sceleton";
+import styles from "./styles.module.css";
+
+export const AnswerShort = ({ currentItem }: currentItemProp) => {
+  const isLoading = !currentItem;
+
+  return (
+    <>
+      <div className={styles.wrapper}>
+        <div className={styles.info}>
+          <h4 className={styles.title_ans}>Краткий ответ</h4>
+          {isLoading ? (
+            <>
+              <Skeleton width="100%" height="20px" />
+              <Skeleton width="80%" height="20px" />
+              <Skeleton width="60%" height="20px" />
+            </>
+          ) : (
+            currentItem && (
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: currentItem?.shortAnswer,
+                }}
+              />
+            )
+          )}
+        </div>
+      </div>
+    </>
+  );
+};
